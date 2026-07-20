@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management Dashboard</title>
+    <link rel="stylesheet" href="/table/css/proDes.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-top">
+        <div class="header-logo">
+            <span class="logo-icon">💻</span>
+            <div class="logo-text">
+                <h1>TechShop</h1>
+                <small>Hardware & Digital Universe</small>
+            </div>
+        </div>
+
+        <div class="header-search">
+            <form action="#">
+                <input type="text" placeholder="Search laptops, components, gaming gear...">
+                <button type="submit" class="search-btn">🔍</button>
+            </form>
+        </div>
+
+        <div class="header-actions">
+            <a href="#" class="user-auth-btn">
+                <span class="icon">👤</span> Login / Register
+            </a>
+        </div>
+    </div>
+
+    <nav class="header-nav">
+        <ul class="nav-menu">
+            <li class="menu-item has-dropdown">
+                <a href="#" class="menu-link mega-menu-toggle">☰ Categories</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">PC Components (GPU, CPU, Motherboards)</a></li>
+                    <li><a href="#">Laptops & All-in-Ones</a></li>
+                    <li><a href="#">Gaming Gear (Mice, Keyboards)</a></li>
+                    <li><a href="#">Storage Devices (SSDs, External Drives)</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-link">🖥️ PC Builder</a></li>
+            <li class="menu-item"><a href="#" class="menu-link text-danger">🔥 Hot Deals</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">📝 Hardware Blog</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="content-wrapper">
+    <h2>Product Inventory💻</h2>
+
+    
+    <div id="product1" class="blurBack">
+        <a href="#" class="close-overlay"></a>
+        <div class="modal-content">
+            <a href="#" class="close-btn">&times;</a>
+            <img src="/table/images/iphone15.png" alt="iPhone 15" class="modal-img">
+            <h3>iPhone 15 Pro</h3>
+        </div>
+    </div>
+
+    <div id="product2" class="blurBack">
+        <a href="#" class="close-overlay"></a>
+        <div class="modal-content">
+            <a href="#" class="close-btn">&times;</a>
+            <img src="/table/images/36867-5-keyboard-clipart.png" alt="Keyboard" class="modal-img">
+            <h3>Mechanical Keyboard</h3>
+        </div>
+    </div>
+
+    <div id="product3" class="blurBack">
+        <a href="#" class="close-overlay"></a>
+        <div class="modal-content">
+            <a href="#" class="close-btn">&times;</a>
+            <img src="/table/images/shopping.png" alt="Logitech G203" class="modal-img">
+            <h3>Logitech G203 LIGHTSYNC</h3>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#101</td>
+                    <td>
+                        <a href="#product1">
+                            <div class="img-frame">
+                                <img src="/table/images/iphone15.png" alt="iPhone 15" class="product-img scale3">
+                            </div>
+                        </a>
+                    </td>
+                    <td><strong>iPhone 15 Pro</strong></td>
+                    <td>Electronics</td>
+                    <td>$999.00</td>
+                    <td><span class="status-badge instock">In Stock</span></td>
+                </tr>
+                
+                <tr>
+                    <td>#102</td>
+                    <td>
+                        <a href="#product2">
+                            <div class="img-frame">
+                                <img src="/table/images/36867-5-keyboard-clipart.png" alt="Keyboard" class="product-img scale3">
+                            </div>
+                        </a>
+                    </td>
+                    <td><strong>Mechanical Keyboard</strong></td>
+                    <td>Accessories</td>
+                    <td>$89.50</td>
+                    <td><span class="status-badge instock">In Stock</span></td>
+                </tr>
+                
+                <tr>
+                    <td>#103</td>
+                    <td>
+                        <a href="#product3">
+                            <div class="img-frame">
+                                <img src="/table/images/shopping.png" alt="Logitech G203" class="product-img scale3">
+                            </div>
+                        </a>
+                    </td>
+                    <td><strong>Logitech G203 LIGHTSYNC</strong></td>
+                    <td>Accessories</td>
+                    <td>$19.00</td>
+                    <td><span class="status-badge outofstock">Out of Stock</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
